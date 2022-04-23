@@ -1,0 +1,106 @@
+:root {
+    --primary: #14454B;
+    --secondary: #3F98A5;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 250px max-content auto 100px;
+    grid-template-columns: 32px auto 32px;
+    background-color: var(--primary);
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+
+.wrapper-border {
+    grid-row: 1/-1;
+    grid-row: 1/-1;
+    background-repeat: repeat-y;
+    background-image: url("../media/border_1.png");
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.wrapper-border-left {
+    grid-column: 3/4;
+}
+
+.wrapper-border-right {
+    grid-column: 1/2;
+}
+
+.header-wrapper {
+    grid-row: 1/2;
+}
+
+.navbar-wrapper {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    position: sticky;
+    top: 0;
+    height: auto;
+}
+
+.navbar-list {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navbar-item {
+    background-repeat: repeat-x;
+    background-image: url("../media/button_1.png");
+    background-size: contain;
+    image-rendering: pixelated;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'VT323', monospace;
+}
+
+.navbar-item-active{
+    color: whitesmoke;
+}
+
+.navbar-item:hover{
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 5px;
+    border-color: goldenrod;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.banner {
+    background-image: url("../media/studio_brox_basic_pixel.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
+
+.footer{
+    grid-row: 4/-1;
+    grid-column: 2/3;
+    height: 50px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
