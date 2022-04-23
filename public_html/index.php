@@ -4,8 +4,8 @@
 require "../private_html/modules/head.php";
 ?>
 
-<body>
-    <img class="banner" src="/static/media/studio_brox_banner_cut.png"></img>
+<body class="d-flex flex-column min-vh-100">
+    <img class="banner" src="/static/media/image/studio_brox_banner_cut.png"></img>
     <?php
     include "../private_html/modules/navbar.php";
 
