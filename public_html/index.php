@@ -5,25 +5,21 @@ require "../private_html/modules/head.php";
 ?>
 
 <body>
-    <div class="wrapper">
-        <div class="banner"></div>
-        <div class="wrapper-border wrapper-border-left"></div>
-        <div class="wrapper-border wrapper-border-right"></div>
-        <?php
-        include "../private_html/modules/navbar.php";
+    <img class="banner" src="/static/media/studio_brox_banner_cut.png"></img>
+    <?php
+    include "../private_html/modules/navbar.php";
 
-        if (isset($_GET['page'])) {
-            if (file_exists("../private_html/pages/" . $_GET['page'] . ".php")) {
-                include "../private_html/pages/" . $_GET['page'] . ".php";
-            } else {
-                include "../private_html/pages/error/404.php";
-            }
+    if (isset($_GET['page'])) {
+        if (file_exists("../private_html/pages/" . $_GET['page'] . ".php")) {
+            include "../private_html/pages/" . $_GET['page'] . ".php";
         } else {
-            require "../private_html/pages/home.php";
+            include "../private_html/pages/error/404.php";
         }
-        require "../private_html/modules/footer.php";
-        ?>
-    </div>
+    } else {
+        require "../private_html/pages/home.php";
+    }
+    require "../private_html/modules/footer.php";
+    ?>
 </body>
 <?php
 require "../private_html/modules/postLoad.php";

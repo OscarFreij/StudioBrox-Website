@@ -4,11 +4,12 @@ function SetActivePage() {
       });
       let value = params.page;
 
-      for (let index = 0; index < $(".navbar-item").length; index++) {
-        const element = $(".navbar-item")[index];
+      for (let index = 0; index < $(".nav-link").length; index++) {
+        const element = $(".nav-link")[index];
         if (element.href.includes(value))
         {
-            element.classList.add("navbar-item-active");
+            element.classList.add("active");
+            element.setAttribute("aria-current", "page");
             console.log("current page: "+value);
         }
       }
