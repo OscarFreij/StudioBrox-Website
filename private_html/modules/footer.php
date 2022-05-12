@@ -3,7 +3,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <span class="navbar-text">
-                    StudioBrox - Assets for all!
+                    StudioBrox &copy;
                 </span>
             </div>
         </nav>
