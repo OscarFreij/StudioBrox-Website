@@ -11,6 +11,23 @@ body {
     width: 100%;
 }
 
+.bg-dark
+{
+    background-color: var(--primary)!important;
+}
+
+.btn-primary
+{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-primary:hover
+{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
