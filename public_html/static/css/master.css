@@ -1,10 +1,8 @@
 :root {
-    --primary: #14454B;
-    --primary-light: #1c666f;
-    --primary-dark: #11393e;
-    --secondary: #3F98A5;
-    --light: #fffff0;
-    --dark: #323232;
+    --bs-primary: #14454B !important;
+    --bs-secondary: #3F98A5 !important;
+    --light: #fffff0 !important;;
+    --dark: #323232 !important;;
 }
 
 body {
@@ -24,56 +22,4 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-}
-
-
-.banner
-{
-    width: 100%;
-    object-fit: contain;
-    grid-column: 1/-1;
-    grid-row: 1/2;
-}
-
-.wrapper
-{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto auto 120px;
-}
-
-.navbar-wrapper
-{
-    position: relative;
-    grid-column: -2/-1;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    top: 0;
-    left: 0;
-}
-
-header
-{
-    position: fixed;
-    width: 100%;
-}
-
-.content-wrapper
-{
-    display: grid;
-    height: 1200px;
-    grid-column: 1/-1;
-    grid-row: 2/3;
-}
-
-.bg-light
-{
-    background-color: var(--light);
-}
-
-.bg-dark
-{
-    background-color: var(--dark);
 }

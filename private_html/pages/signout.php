@@ -1,3 +1,3 @@
 <div class="container-fluid">
-    About Page
+    Signout Page
 </div>

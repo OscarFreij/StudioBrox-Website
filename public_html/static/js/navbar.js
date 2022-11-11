@@ -1,37 +1,34 @@
 'use strict'
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-  document.getElementById("navbar-list").style.visibility = "visible";
-};
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("navbar-list").style.visibility = "hidden";
-};
-
 function SetActivePage() {
   const params = new Proxy(new URLSearchParams(window.location.search), {
       get: (searchParams, prop) => searchParams.get(prop),
     });
     let value = params.page;
 
-    for (let index = 0; index < $(".navbar-item").length; index++) {
-      const element = $(".navbar-item")[index];
+    if (value == null)
+    {
+        console.log("no page specified in URL. Setting page to default: home");
+        value = "home";
+    }
+
+    for (let index = 0; index < $(".nav-link").length; index++) {
+      const element = $(".nav-link")[index];
+      if (element.href.length == 0)
+      {
+        continue;
+      }
       if (element.href.includes(value))
       {
           element.classList.add("active");
+          element.setAttribute("aria-current", "page");
           console.log("current page: "+value);
+          return;
       }
     }
 }
 
-$(function() {
-  $(window).scroll(function () {
-     if ($(this).scrollTop() > ($('.banner')[0].clientHeight-$('.navbar-wrapper')[0].clientHeight)) {
-        $('header').addClass('bg-dark')
-     } else {
-        $('header').removeClass('bg-dark')
-     }
-  });
-});
+function toggleNavbarButton(element)
+{
+  element.classList.toggle('opened');
+  element.setAttribute('aria-expanded', element.classList.contains('opened'))
+}
