@@ -9,8 +9,8 @@ body {
     margin: 0;
     /*font-family: "Caveat";*/
     /*font-family: "Comic Sans MS";*/
-    /*font-family: 'Acme', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Acme', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
     height: 100%;
 }
 
@@ -25,4 +25,12 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }

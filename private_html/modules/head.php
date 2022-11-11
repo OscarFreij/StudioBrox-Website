@@ -17,4 +17,17 @@
     <!--<link rel="stylesheet" href="static/css/media-master.css">-->
     <link rel="stylesheet" href="static/css/navbar.css">
     <!--<link rel="stylesheet" href="static/css/navbar-media.css">-->
+
+
+    <?php
+    if (isset($_GET['page']))
+    {
+        if (file_exists("static/css/".$_GET['page'].".css"))
+        {
+            ?>
+                <link rel="stylesheet" href="static/css/<?=$_GET['page']?>.css">
+            <?php
+        }
+    }
+    ?>
 </head>
