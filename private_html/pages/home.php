@@ -12,7 +12,7 @@
                                 <div class="card-body text-center">
                                     <img height="64" src="static/media/svg/image-svgrepo-com.svg" alt="">
                                     <h5 class="card-title text text-dark pt-2">Graphics/Animation</h5>
-                                    <a href="#" class="btn btn-success">Go to category</a>
+                                    <a href="/?page=assets&category=graphics" class="btn btn-success">Go to category</a>
                                 </div>
                             </div>
                         </div>
@@ -21,7 +21,7 @@
                                 <div class="card-body text-center">
                                     <img height="64" src="static/media/svg/note-svgrepo-com.svg" alt="">
                                     <h5 class="card-title text text-dark pt-2">Music/Sound</h5>
-                                    <a href="#" class="btn btn-success">Go to category</a>
+                                    <a href="/?page=assets&category=sound" class="btn btn-success">Go to category</a>
                                 </div>
                             </div>
                         </div>
@@ -30,7 +30,7 @@
                                 <div class="card-body text-center">
                                     <img height="64" src="static/media/svg/toolbox-svgrepo-com.svg" alt="">
                                     <h5 class="card-title text text-dark pt-2">Miscellaneous</h5>
-                                    <a href="#" class="btn btn-success">Go to category</a>
+                                    <a href="/?page=assets&category=miscellaneous" class="btn btn-success">Go to category</a>
                                 </div>
                             </div>
                         </div>
