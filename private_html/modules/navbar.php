@@ -29,6 +29,7 @@
             </li>
             <li><a class="dropdown-item fs-4" href="/?page=assets&category=graphics">Graphics</a></li>
             <li><a class="dropdown-item fs-4" href="/?page=assets&category=music">Music</a></li>
+            <li><a class="dropdown-item fs-4" href="/?page=assets&category=miscellaneous">Miscellaneous</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -37,7 +38,7 @@
       </ul>
       <ul class="navbar-nav">
         <?php
-        if (!isset($_SESSION['username'])) {
+        if (!isset($_SESSION['email'])) {
         ?>
           <li class="nav-item">
             <a class="nav-link" href="/?page=signin">Sign In / Register</a>
